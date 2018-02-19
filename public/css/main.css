@@ -15,9 +15,9 @@ section{
   padding-top: 12vh;
 }
 
-.col-md-12 h1{
+/*.col-md-12 h1{
   color: #ca0568;
-}
+}*/
 
 /* estilos para el header */
 header{
@@ -148,6 +148,35 @@ header ul li a:hover{
 }
 
 /* estilos para la sección de about-me */
+#aboutme{
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.title-aboutme{
+  font-size:100px;
+  text-shadow: 2px 2px 2px black;
+  border-right: 3px solid black;
+}
+
+.subtitle{
+  font-size: 50px;
+}
+
+.title-hobbies{
+  margin: 70px 0 30px 0;
+}
+
+.subtitle span{
+  font-size: 30px;
+}
+
+.icon-hobbies{
+  border-radius:80%;
+  font-size: 70px;
+  background-color:rgb(8, 239, 255);
+  margin:0 5px;
+}
+
 .hobbies img{
   width: 330px;
   height:230px;
@@ -158,7 +187,7 @@ header ul li a:hover{
   margin: 0!important;
 }
 
-.image-aboutme{
+.image-objetivo{
   width: 300px;
   height: 250px;
 }
@@ -171,6 +200,13 @@ header ul li a:hover{
   width: 100vw;
   height: 100vh;
   background-attachment: fixed;
+}
+
+/* estilos para la secciòn de skills */
+.title-skills{
+  font-size:100px;
+  text-shadow: 2px 2px 2px black;
+  border-right: 3px solid black;
 }
 
 /* estilos para la sección de contacts */

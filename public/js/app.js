@@ -19,12 +19,23 @@
   //     title.fadeIn();
   //   }
   // });
-  // $('#inicio').on('click', function() {
-  //   var posicion = $('#final').offset().top;
-  //   $('html, body').animate({
-  //     scrollTop: posicion
-  //   }, 2000); 
-  // });
+  let functionScroll = (start, end) => {
+    $(start).on('click', function() {
+    var posicion = $(end).offset().top;
+    $('html, body').animate({
+      scrollTop: posicion
+    }, 1000); 
+  });
+  }
+
+  functionScroll('#aboutme-start','#aboutme');
+  functionScroll('#skills-start','#skills');
+  functionScroll('#portfolio-start','#portfolio');
+  functionScroll('#contacts-start','#contacts');
+  functionScroll('#icon1-contacts','#contacts');
+  functionScroll('#icon2-contacts','#contacts');
+
+  
 
   // listAnchor.on('click', function() {
     
