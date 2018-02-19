@@ -15,15 +15,15 @@ section{
   padding-top: 12vh;
 }
 
-/*.col-md-12 h1{
-  color: #ca0568;
-}*/
+.subtitle{
+  font-size: 30px;
+}
 
 /* estilos para el header */
 header{
   width: 100vw;
   margin-top: 0;
-  background-color: rgb(41, 207, 236);
+  /* background-color: rgb(41, 207, 236); */
   height:10vh;
   z-index: 1000;
   position: fixed;
@@ -32,32 +32,26 @@ header{
 
 header ul li{
   list-style: none;
-  border: 2px dotted rgb(10, 88, 119);
+  /* border: 2px dotted rgb(10, 88, 119); */
   border-radius: 5px;
-  background-color: rgb(29, 236, 226);
-}
-
-header ul li:hover{
-  background-color: #ca0568;
-  color: rgb(255, 255, 255);
 }
 
 header ul li a{
   text-decoration: none;
   margin-right: 10px;
-  color: rgb(10, 88, 119);
-  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
   font-weight: 10px;
 }
 
 header ul li a:hover{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 88, 10);
 }
 
 /* estilos para la sección cover-page */
 .cover-page{
-  background-image: url(../assets/images/ciudad-vintage.jpg);
+  background-image: url(../assets/images/fondo-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -83,21 +77,24 @@ header ul li a:hover{
 }
 
 .slogan h1{
-  font-size: 50px;
-  color:rgb(255, 255, 255);
- 
+  font-size: 60px;
 }
+
 .slogan h1, .slogan h2{
   margin: 5px;
 }
 
 .slogan h2{
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .slogan ul{
   margin: 30px;
   font-size: 45px;
+}
+
+.slogan ul li a:hover{
+  text-decoration: none;
 }
 
 .slogan ul li a i{
@@ -106,11 +103,7 @@ header ul li a:hover{
 }
 
 .slogan ul li a i:hover{
-  color: rgb(8, 239, 255);
-  text-decoration: none;
-}
-
-.slogan ul li a:hover{
+  color: rgb(255, 88, 10);
   text-decoration: none;
 }
 
@@ -122,7 +115,7 @@ header ul li a:hover{
 
 .download a:hover{
   text-decoration: none;
-  color:rgb(8, 239, 255);
+  color:rgb(255, 88, 10);
   
 }
 
@@ -133,7 +126,7 @@ header ul li a:hover{
 }
 
 .download a h3:hover{
-  color:rgb(8, 239, 255); 
+  color:rgb(255, 88, 10); 
   cursor: pointer;
 }
 
@@ -141,7 +134,7 @@ header ul li a:hover{
   color: rgb(255, 254, 254);
 }
 
-.icon-download{
+.icon-cloud-download{
   font-size: 35px;
   margin-right: 10px;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -150,51 +143,36 @@ header ul li a:hover{
 /* estilos para la sección de about-me */
 #aboutme{
   background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 80px;
 }
 
 .title-aboutme{
-  font-size:100px;
-  text-shadow: 2px 2px 2px black;
-  border-right: 3px solid black;
+  font-size: 60px;
+  color: rgb(255, 101, 29);
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
-.subtitle{
-  font-size: 50px;
+.line-decoration{
+  height: 250px;
+  border-right: 2px solid rgb(255, 101, 29);
 }
 
 .title-hobbies{
-  margin: 70px 0 30px 0;
+  margin: 100px 0 70px 0;
 }
 
-.subtitle span{
-  font-size: 30px;
-}
-
-.icon-hobbies{
-  border-radius:80%;
-  font-size: 70px;
-  background-color:rgb(8, 239, 255);
+.icon-hobbies span{
+  border-radius: 20%;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  background-color:rgb(63, 65, 64);
   margin:0 5px;
-}
-
-.hobbies img{
-  width: 330px;
-  height:230px;
-}
-
-.padding{
-  padding: 0!important;
-  margin: 0!important;
-}
-
-.image-objetivo{
-  width: 300px;
-  height: 250px;
 }
 
 /* estilos para la sección de extra-page */
  .extra-page{
-  background-image: url(../assets/images/paisaje.jpg);
+  background-image: url(../assets/images/city-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -204,10 +182,21 @@ header ul li a:hover{
 
 /* estilos para la secciòn de skills */
 .title-skills{
-  font-size:100px;
+  font-size: 60px;
+  color: rgb(255, 101, 29);
   text-shadow: 2px 2px 2px black;
-  border-right: 3px solid black;
 }
+
+.img-tech i{
+  font-size: 50px;
+}
+
+.img-tech img{
+  width:50px ;
+  height:50px ;
+}
+
+/* estilos para la sección portfolio */
 
 /* estilos para la sección de contacts */
 #contacts{
@@ -216,9 +205,6 @@ header ul li a:hover{
   justify-content: center;
 }
 
-#contacts h1{
-  color:#ca0568;
-}
 
 .contacts-list{
   margin-top: 30px;
