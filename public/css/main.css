@@ -1,29 +1,31 @@
+/* estilos generales */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 section{
-  height: 100vh;
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 #aboutme, #skills, #portfolio, #contacts{
-  padding-top: 12vh;
+  padding-top: 15vh;
 }
 
+/* clases reutilizables */
 .subtitle{
   font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 40px;
 }
 
 /* estilos para el header */
 header{
   width: 100vw;
   margin-top: 0;
-  /* background-color: rgb(41, 207, 236); */
   height:10vh;
   z-index: 1000;
   position: fixed;
@@ -32,7 +34,6 @@ header{
 
 header ul li{
   list-style: none;
-  /* border: 2px dotted rgb(10, 88, 119); */
   border-radius: 5px;
 }
 
@@ -46,12 +47,27 @@ header ul li a{
 
 header ul li a:hover{
   text-decoration: none;
-  color: rgb(255, 88, 10);
+  color: rgb(52, 153, 167);
 }
 
-/* estilos para la sección cover-page */
-.cover-page{
-  background-image: url(../assets/images/fondo-image.jpg);
+.cv-download{
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 10px 10px 5px 10px;
+}
+
+.cv-download:hover{
+  border: 1px solid rgb(52, 153, 167);
+  border-radius: 3px;
+}
+
+.icon-cloud-download{
+  margin: 0  10px 0 0;
+}
+
+/* estilos para la sección homepage */
+.homepage{
+  background-image: url(../assets/images/img4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -59,11 +75,10 @@ header ul li a:hover{
   background-attachment: fixed;
 }
 
-.cover-opacity{
-  background-color: rgba(25, 40, 34, 0.4);
+.homepage-opacity{
+  background-color: rgba(31, 49, 63, 0.4);
   width:100vw;
   height:100vh ;
-  /* color: rgb(247, 208, 202); */
 }
 
 .slogan{
@@ -73,11 +88,11 @@ header ul li a:hover{
   flex-direction: column;
   margin-top: 200px;
   color:rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  text-shadow: 2px 2px 2px rgb(51, 45, 45);
 }
 
 .slogan h1{
-  font-size: 60px;
+  font-size: 80px;
 }
 
 .slogan h1, .slogan h2{
@@ -85,80 +100,32 @@ header ul li a:hover{
 }
 
 .slogan h2{
-  font-size: 40px;
-}
-
-.slogan ul{
-  margin: 30px;
-  font-size: 45px;
-}
-
-.slogan ul li a:hover{
-  text-decoration: none;
-}
-
-.slogan ul li a i{
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-.slogan ul li a i:hover{
-  color: rgb(255, 88, 10);
-  text-decoration: none;
-}
-
-.download{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.download a:hover{
-  text-decoration: none;
-  color:rgb(255, 88, 10);
-  
-}
-
-.download a h3{
-  font-size: 35px;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
-
-}
-
-.download a h3:hover{
-  color:rgb(255, 88, 10); 
-  cursor: pointer;
-}
-
-.download a h3{
-  color: rgb(255, 254, 254);
-}
-
-.icon-cloud-download{
-  font-size: 35px;
-  margin-right: 10px;
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  font-size: 60px;
 }
 
 /* estilos para la sección de about-me */
 #aboutme{
-  background-color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 80px;
+  background-color: rgb(231, 231, 231);
+  height:100vh;
 }
 
 .title-aboutme{
+  padding-top: 6vh;
   font-size: 60px;
-  color: rgb(255, 101, 29);
-  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  color: rgb(4, 92, 107);
+  font-weight: bold;
 }
 
-.line-decoration{
-  height: 250px;
-  border-right: 2px solid rgb(255, 101, 29);
+.line-decoration1{
+  height: 200px;
+  border-right: 2px solid rgb(4, 92, 107);
 }
 
 .title-hobbies{
-  margin: 100px 0 70px 0;
+  padding-top: 15vh;
+  padding-bottom: 40px ;
+  color: rgb(4, 92, 107);
+  font-weight: bold;
 }
 
 .icon-hobbies span{
@@ -166,45 +133,111 @@ header ul li a:hover{
   font-size: 40px;
   color: white;
   padding: 10px;
-  background-color:rgb(63, 65, 64);
+  background-color:rgb(4, 92, 107);
   margin:0 5px;
+}
+
+.icon-hobbies span:hover{
+  background-color: rgb(52, 153, 167);
 }
 
 /* estilos para la sección de extra-page */
  .extra-page{
-  background-image: url(../assets/images/city-image.jpg);
+  background-image: url(../assets/images/robot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-attachment: fixed;
 }
 
 /* estilos para la secciòn de skills */
-.title-skills{
-  font-size: 60px;
-  color: rgb(255, 101, 29);
-  text-shadow: 2px 2px 2px black;
+#skills{
+  font-weight: bold;
+  height: 100vh;
+  color: rgb(51, 51, 51);
 }
 
-.img-tech i{
-  font-size: 50px;
+.title-skills{
+  padding-top: 20vh;
+  font-size: 60px;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+.line-decoration2{
+  border-right: 2px solid rgb(51, 51, 51);
+  height:70vh;
 }
 
 .img-tech img{
+  /* background-color: rgb(32, 27, 49); */
+  width: 70px ;
+  height:70px ;
+}
+
+figcaption{
   width:50px ;
   height:50px ;
 }
 
+.list{
+  list-style: none;
+  font-size: 25px;
+}
+
 /* estilos para la sección portfolio */
+#portfolio{
+  height:100vh;
+  background-color: rgb(49, 113, 133);
+}
+
+.portfolio-title{
+  color: rgb(209, 208, 208);
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.product{
+  background-color: rgb(231, 231, 231);
+  margin: 15px;
+  padding: 10px;
+  border-radius:5px;
+  border-bottom: 3px solid rgb(181, 211, 255);
+  border-left: 3px solid rgb(181, 211, 255);
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+}
+
+.product img{
+  width: 220px;
+  height:250px;
+}
+
+.product a{
+  text-decoration: none;
+  border: 2px solid rgb(49, 113, 133);
+  padding: 5px 7px;
+  color:rgb(49, 113, 133);
+  font-weight: bold;
+  margin-right: 10px;
+  border-radius:5px;
+}
+
+.product a:hover{
+  background-color:rgb(49, 113, 133);
+  color:rgb(231, 231, 231);  
+}
 
 /* estilos para la sección de contacts */
 #contacts{
+  height:70vh;
   display: flex;
   text-align: center;
   justify-content: center;
+  background-color: rgb(51, 51, 51);
+  color:rgb(209, 208, 208);
 }
-
 
 .contacts-list{
   margin-top: 30px;
@@ -216,12 +249,12 @@ header ul li a:hover{
 
 .contacts-list div a {
   font-size: 18px;
-  color:rgb(45, 107, 73) ;
+  color:rgb(209, 208, 208);
 }
 
 .contacts-list div a i{
   font-size: 20px;
-  color:rgb(45, 107, 73) ;
+  color:rgb(209, 208, 208);
 }
 .contacts-list div a{
   text-decoration: none;

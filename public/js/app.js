@@ -2,13 +2,13 @@
   let listContact = $('div.contacts-list>div>a');
 
   listContact.on('mouseover', function() {
-    $(this).css({'font-size': '20px', '-webkit-transition': '0.2s', 'color':'rgb(55,8,42)', 'cursor':'pointer'});
-    $('div.contacts-list>div>a>i').css({'color':'rgb(55,8,42)'});
+    $(this).css({'font-size': '20px', '-webkit-transition': '0.2s', 'color':'rgb(38, 30, 65)', 'cursor':'pointer'});
+    $('div.contacts-list>div>a>i').css({'color':'rgb(38, 30, 65)'});
   });
 
   listContact.on('mouseout', function() {
-    $(this).css({'font-size': '18px',  '-webkit-transition': '0.2s', 'color':'rgb(45, 107, 73) '});
-    $('div.contacts-list>div>a>i').css({'color':'rgb(45, 107, 73)'});
+    $(this).css({'font-size': '18px',  '-webkit-transition': '0.2s', 'color':'rgb(38, 30, 65) '});
+    $('div.contacts-list>div>a>i').css({'color':'rgb(38, 30, 65)'});
   });
 
   // $(window).scroll(function() {
@@ -26,7 +26,7 @@
       }, 1000); 
     });
   };
-
+  functionScroll('#homepage-start','#homepage');
   functionScroll('#aboutme-start','#aboutme');
   functionScroll('#skills-start','#skills');
   functionScroll('#portfolio-start','#portfolio');
