@@ -116,6 +116,12 @@ header ul li a:hover{
   font-weight: bold;
 }
 
+.photo img{
+  width: 250px;
+  height: 200px;
+  border-radius:10px;
+}
+
 .line-decoration1{
   height: 200px;
   border-right: 2px solid rgb(4, 92, 107);
