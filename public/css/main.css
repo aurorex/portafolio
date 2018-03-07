@@ -116,6 +116,12 @@ header ul li a:hover{
   font-weight: bold;
 }
 
+.photo img{
+  width: 250px;
+  height: 200px;
+  border-radius:10px;
+}
+
 .line-decoration1{
   height: 200px;
   border-right: 2px solid rgb(4, 92, 107);
@@ -130,15 +136,24 @@ header ul li a:hover{
 
 .icon-hobbies span{
   border-radius: 20%;
-  font-size: 40px;
+  font-size: 50px;
   color: white;
   padding: 10px;
   background-color:rgb(4, 92, 107);
-  margin:0 5px;
+  /* margin:0 55px 0 0; */
 }
 
 .icon-hobbies span:hover{
   background-color: rgb(52, 153, 167);
+}
+
+.icon-hobbies{
+  margin:0 90px 0 0;
+}
+
+.icon2{
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 /* estilos para la sección de extra-page */
