@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 section{
@@ -12,7 +12,7 @@ section{
 }
 
 #aboutme, #skills, #portfolio, #contacts{
-  padding-top: 15vh;
+  padding-top: 12vh;
 }
 
 /* clases reutilizables */
@@ -29,7 +29,8 @@ header{
   height:10vh;
   z-index: 1000;
   position: fixed;
-  padding:30px;
+  /* padding:30px; */
+  background:rgb(31, 34, 54);
 }
 
 header ul li{
@@ -41,8 +42,9 @@ header ul li a{
   text-decoration: none;
   margin-right: 10px;
   color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 10px;
+  font-size: 16px;
+  line-height: 10vh;
+  /* font-weight: 10px; */
 }
 
 header ul li a:hover{
@@ -110,14 +112,14 @@ header ul li a:hover{
 }
 
 .title-aboutme{
-  padding-top: 6vh;
+  padding-top: 5vh;
   font-size: 60px;
   color: rgb(4, 92, 107);
   font-weight: bold;
 }
 
 .photo img{
-  width: 250px;
+  width: 300px;
   height: 200px;
   border-radius:10px;
 }
@@ -127,18 +129,23 @@ header ul li a:hover{
   border-right: 2px solid rgb(4, 92, 107);
 }
 
+.description{
+  padding: 30px;
+}
+
 .title-hobbies{
-  padding-top: 15vh;
+  padding-top: 4vh;
   padding-bottom: 40px ;
+  font-size: 30px;
   color: rgb(4, 92, 107);
   font-weight: bold;
 }
 
 .icon-hobbies span{
-  border-radius: 20%;
-  font-size: 50px;
+  border-radius: 50%;
+  font-size: 55px;
   color: white;
-  padding: 10px;
+  padding: 30px;
   background-color:rgb(4, 92, 107);
   /* margin:0 55px 0 0; */
 }
@@ -147,13 +154,13 @@ header ul li a:hover{
   background-color: rgb(52, 153, 167);
 }
 
-.icon-hobbies{
-  margin:0 90px 0 0;
+.icon-margin-hobbies{
+  margin:0 120px 0 0;
 }
 
-.icon2{
+.icon-margin-hobbies-2{
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 150px;
 }
 
 /* estilos para la sección de extra-page */
@@ -164,6 +171,10 @@ header ul li a:hover{
   width: 100%;
   height: 100vh;
   background-attachment: fixed;
+}
+
+.extra-page h1{
+  /* line-height: 100vh; */
 }
 
 /* estilos para la secciòn de skills */
@@ -185,15 +196,18 @@ header ul li a:hover{
   height:70vh;
 }
 
-.img-tech img{
+.img-tech{
   /* background-color: rgb(32, 27, 49); */
-  width: 70px ;
-  height:70px ;
+  font-size: 70px;
+}
+
+.img-tech img{
+  width: 60px ;
+  height:60px ;
 }
 
 figcaption{
-  width:50px ;
-  height:50px ;
+  font-size: 10px;
 }
 
 .list{
@@ -246,7 +260,7 @@ figcaption{
 
 /* estilos para la sección de contacts */
 #contacts{
-  height:70vh;
+  height:100vh;
   display: flex;
   text-align: center;
   justify-content: center;
