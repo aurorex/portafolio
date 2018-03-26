@@ -15,14 +15,23 @@
     <header>
       <div class="container">
         <div class="row">  
-          <div class=" pull-right">
-            <ul class="list-inline">
+          <div class=" pull-right list">
+            <ul class="list-inline hidden-xs">
               <!-- <li><a href="#homepage" id="homepage-start">HOME</a></li> -->
               <li><a href="#aboutme" id="aboutme-start" >SOBRE MI</a></li>
               <li><a href="#skills" id="skills-start">HABILIDADES</a></li>
               <li><a href="#portfolio" id="portfolio-start">PORTAFOLIO</a></li>
-              <li><a href="#contacts" id="contacts-start">CONTACTOS</a></li>
-              <li><a class="cv-download"><i class="icon-cloud-download"></i>CV</a></li>
+              <li><a href="#contact" id="contact-start">CONTACTO</a></li>
+              <li><a href="https://www.visualcv.com/aurora-vasquez/pdf" class="cv-download"><i class="icon-cloud-download"></i>CV</a></li>
+            </ul>
+            <ul class="nav nav-tabs visible-xs">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-bars"></i>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="#aboutme" id="aboutme-start" >SOBRE MI</a></li>
+                <li><a href="#skills" id="skills-start">HABILIDADES</a></li>
+                <li><a href="#portfolio" id="portfolio-start">PORTAFOLIO</a></li>
+                <li><a href="#contact" id="contact-start">CONTACTO</a></li> 
+              </ul>
             </ul>
           </div>
         </div>
@@ -34,15 +43,11 @@
         <div class="row homepage-opacity">
           <div class="col-md-12">
             <div class="slogan">
-              <h1>AURORA VASQUEZ</h1>
+              <h1>AURORA VÁSQUEZ</h1>
               <h2>Front-end Developer</h2>
-              <!-- <ul class="list-inline">
-                <li><a href="#contacts" id="icon1-contacts"><i class="icon-phone-square"></i></a></li>
-                <li><a href="#contacts" id="icon2-contacts"><i class="icon-envelope-o"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/aurora-v%C3%A1squez-s%C3%A1nchez-506652159/" target="blank"><i class="icon-linkedin-square"></i></a></li>
-                <li><a href="https://github.com/aurorex?tab=repositories" target="blank"><i class="icon-github-square"></i></a></li>
-                <li><a href="https://www.facebook.com/aurora.vasquez.39566905"><i class="icon-facebook-square" target="blank"></i></a></li>
-              </ul>  -->
+              <ul class="hidden-sm hidden-md hidden-lg">
+                <li><a href="https://www.visualcv.com/aurora-vasquez/pdf" class="cv-download hidden-md hidden-lg"><i class="icon-cloud-download"></i>CV</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -51,47 +56,42 @@
     <!-- estructura de la section about me -->
     <section id="aboutme">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 line-decoration1">
+        <div class="row aboutme">
+          <div class="col-xs-12 col-md-4 col-sm-4 line-decoration1">
             <h1 class="title-aboutme text-center">SOBRE MI</h1>
           </div>
-          <div class="photo col-xs-4 col-md-4">
-            <img src="assets/images/aurora.jpg" alt="aurora">
-          </div>
-          <div class="col-md-4">
+          <div class="col-xs-12 col-md-5 col-sm-5">
             <div class="description">
-              <p>La programación para mí es un reto, desde que decidí ser una desarrolladora he aprendido el significado de ser constante,paciente y estar siempre un paso adelante en cada situación.Me apasiona la programación y en un futuro me gustaría trabajar en temas de Robótica y Machine Learning.</p>
+              <p>La programación para mí es un reto, desde que decidí ser una desarrolladora he aprendido el significado de ser constante, paciente y estar siempre un paso adelante en cada situación. Me apasiona la programación y en un futuro me gustaría trabajar en temas de Robótica y Machine Learning.</p>
             </div>
           </div>
+          <div class="photo col-md-3 col-sm-3 col-xs-12 aboutme">
+            <img src="assets/images/aurora.jpg" alt="aurora">
+          </div> 
         </div>
-        <div class="row">
-          <h2 class="text-center title-hobbies">HOBBIES</h2>
+        <div class="row hidden-xs hidden-sm interestings ">
+          <h2 class="text-center title-hobbies">INTERESES</h2>
           <div class="col-md-12">
-            <div class="col-md-2"></div>
-            <div class="col-md-2 text-center icon-hobbies icon-margin-hobbies"><span class="icon-film"></span>CINE</div>
-            <div class="col-md-2 text-center icon-hobbies icon-margin-hobbies"><span class="icon-volume-up"></span>MÚSICA</div>
-            <div class="col-md-2 text-center icon-hobbies icon-margin-hobbies"><span class="icon-university"></span>TEATRO</div>
-            <!-- <div class="col-md-3"></div> -->
-          </div>
-          <div class="col-md-12">
-            <div class="col-md-2"></div>
-            <div class="col-md-2 text-center icon-hobbies icon-margin-hobbies-2"><span class="icon-laptop"></span>PROGRAMAR</div> 
-            <div class="col-md-2 text-center icon-hobbies icon-margin-hobbies-2"><span class="icon-street-crossing"></span>CAMINAR</div>  
-            <!-- <div class="col-md-5"></div> -->
+            <div class="col-md-1  col-xs-12"></div>
+            <div class="col-md-2  col-xs-12text-center icon-hobbies "><span class="icon-film"></span><p>CINE</p></div>
+            <div class="col-md-2  col-xs-12text-center icon-hobbies icon-margin-hobbies"><span class="icon-volume-up"></span><p>MÚSICA</p></div>
+            <div class="col-md-2  col-xs-12text-center icon-hobbies "><span class="icon-university"></span><p>TEATRO</p></div>
+            <div class="col-md-2  col-xs-12text-center icon-hobbies icon-margin-hobbies"><span class="icon-laptop"></span><p>PROGRAMAR</p></div> 
+            <div class="col-md-2  col-xs-12text-center icon-hobbies "><span class="icon-street-crossing"></span><p>CAMINAR</p></div>  
           </div>
         </div>
       </div>
     </section>
     
     <!-- seccion extra-page -->
-    <section>
+    <section class="hidden-xs">
      <div class="container extra-page">
        <div class="row">
          <div class="col-md-12">
            <!-- <h1>"A veces la persona que nadie imagina capaz de nada <br>
              es la que hace cosas que nadie imagina"...</h1> -->
-            <h1>“Una computadora puede ser llamada <br> "inteligente" si logra engañar a una persona <br> haciéndole creer que es un humano”</h1>
-           <h2>Alan Turing</h2>
+            <!-- <h1>“Una computadora puede ser llamada <br> "inteligente" si logra engañar a una persona <br> haciéndole creer que es un humano”</h1>
+           <h2>Alan Turing</h2> -->
            
          </div>
        </div>
@@ -101,61 +101,71 @@
     <section id="skills">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 line-decoration2">
-            <h1 class="text-center title-skills ">HABILIDADES</h1>
+          <div class="col-xs-12 col-md-4 line-decoration2">
+            <h1 class=" title-skills ">HABILIDADES</h1>
           </div>
-          <div class="col-md-7">
-            <div class="col-md-12 ">
-              <!-- <h3 class="text-center subtitle">TÉCNICAS</h3> -->
-              <div class="col-md-3 img-tech html5">
-                  <i class="fab fa-html5"></i>
-                  <figcaption>HTML-5</figcaption>
+          <div class="col-xs-12 col-md-8 col-sm-12">
+            <div class="col-xs-12 col-md-8 skills">
+              <h3 class="text-center subtitle-tech">TÉCNICAS</h3>
+              <div class="col-md-4 col-xs-6 img-tech html5">
+                <img src="assets/images/html5.2.png" alt="">
+                <figcaption class="">HTML-5</figcaption>
               </div>
-              <div class="col-md-3 img-tech css3">
-                  <i class="fab fa-css3-alt"></i>
-                  <figcaption>CSS-3</figcaption>
+              <div class="col-md-4 col-xs-6 img-tech css3">
+                <img src="assets/images/css3-2.png" alt="">
+                <figcaption class="">CSS-3</figcaption>
               </div>
-              <div class="col-md-3 img-tech js">
-                  <i class="fab fa-js-square"></i>
-                  <figcaption>JAVA SCRIPT</figcaption>
+              <div class="col-md-4 col-xs-6 img-tech js">
+                <img src="assets/images/js-2.png" alt="">
+                <figcaption class="">JAVASCRIPT</figcaption>
               </div>
-              <div class="col-md-3 img-tech jquery">
-                <img src="assets/images/jquery.png" alt="">
-                <figcaption>JQUERY</figcaption>
+              <div class="col-md-2"></div>
+              <div class="col-md-4 col-xs-6 img-tech1 jquery">
+                <img src="assets/images/jquery.gif" alt="">
+                <figcaption class="">JQUERY</figcaption>
               </div>
-              <div class="col-md-3 img-tech nodejs">
-                  <i class="fab fa-node-js"></i>
-                  <figcaption>NODE JS</figcaption>
+              <div class="col-md-4 col-xs-6 img-tech react">
+                <img src="assets/images/react-2.png" alt="">
+                <figcaption class="">REACT</figcaption>
               </div>
-              <div class="col-md-3 img-tech babel">
-                <img src="assets/images/babel.png" alt="">
-                <figcaption>BABEL</figcaption>
+              <div class="col-md-2"></div>
+              <div class="col-md-4 col-xs-6 img-tech git">
+                <img src="assets/images/git-2.png" alt="">
+                <figcaption class="">GIT</figcaption>
               </div>
-              <div class="col-md-3 img-tech bootstrap">
-                <img src="assets/images/bootstrap.png" alt="">
-                <figcaption>BOOTSTRAP</figcaption>
+              <div class="col-md-4 col-xs-6 img-tech1 nodejs">
+                <img src="assets/images/nodejs-2.png" alt="">
+                <figcaption class="">NODE-JS</figcaption>
               </div>
-              <div class="col-md-3 img-tech materialize">
-                <img src="assets/images/materialize.png" alt="">
-                <figcaption>MATERIALIZE</figcaption>
+              <div class="col-md-4 col-xs-6 babel">
+                <img src="assets/images/babel-2.png" alt="">
+                <figcaption class="">BABEL</figcaption>
               </div>
-              <div class="col-md-3 img-tech">
-                  <i class="fab fa-react"></i>
-                  <figcaption>MATERIALIZE</figcaption>
-                </div>
-
+              <div  class="col-md-2"></div>
+              <div class="col-md-4 col-xs-6 bootstrap ">
+                <img src="assets/images/bootstrap-2.png" alt="">
+                <figcaption class="">BOOTSTRAP</figcaption>
+              </div>
+              <div class="col-md-4 col-xs-6 materialize">
+                <img src="assets/images/materialize-2.png" alt="">
+                <figcaption class="">MATERIALIZE</figcaption>
+              </div>
             </div>
-            <div class="col-md-12">
-              <!-- <h3 class="text-center subtitle">BLANDAS</h3>
-              <ul class="col-md-12 list list-inline text-center">
-                <li>Trabajo en equipo ></li>
-                <li>Perseverante ></li>
-                <li>Autodidácta ></li>
-                <li>Responsable</li>
-                </ul> -->
+            <div class="col-md-4 col-xs-12 col-sm-12">
+              <h3 class="text-center subtitle-tech">BLANDAS</h3>
+              <ul class="col-md-12 col-xs-12 list list-inline text-center">
+                <li>
+                  <img src="assets/images/mejor_squad.png" alt=""><p>premio</p>
+                </li>
+                <li>
+                  <img src="assets/images/best_teamplayer.png" alt=""><p>premio</p>
+                </li>
+                <li>
+                  <img src="assets/images/más_productva.png" alt=""><p>nominación</p>
+                </li>
+                </ul>
             </div>
           </div>
-         
         </div>
       </div>
     </section>
@@ -167,66 +177,73 @@
             <h1 class="text-center portfolio-title">PORTAFOLIO</h1>
           </div>
           <div class="col-md-1 "></div>
-          <div class="col-md-3 product">
-            <h3 class="text-center">App Love</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci maxime nulla vel totam, dolorum asperiores quaerat quos </p>
-            <div>
-              <img src="assets/images/img4.jpg" alt="api-swapi">
+          <div class="col-md-3 text-center product">
+            <h3 class="text-center">Api Swapi</h3>
+            <!-- <p>La app Swapi nos brinda una colección de imagenes de los personajes de la pelicula STAR WARS con singulares características de cada personaje.</p> -->
+            <div class="col-xs-12 img">
+              <img class="img-responsive" src="assets/images/api-swapi.png" alt="api-swapi">
             </div>
             <br>
-            <a href="https://github.com/aurorex/api-swapi" target="blank"> DEMO</a>
-            <a href="https://github.com/aurorex/api-swapi" target="blank"> REPOSITORIO</a>
+            <a class="demo" href="https://aurorex.github.io/api-swapi/public/" target="blank"> DEMO</a>
+            <a class="repositorio" href="https://github.com/aurorex/api-swapi" target="blank"> REPOSITORIO</a>
           </div>
-          <div class="col-md-3 product">
+          <div class="col-md-3 product text-center">
             <h3 class="text-center">Food Map</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati reprehenderit dolores dolore ipsum eveniet nam porro</p>   
-            <div>
-              <img src="assets/images/img4.jpg" alt="foodmap">
+            <!-- <p>Esta aplicacion sirve para encontrar restaurantes cerca de donde te ubiques, solo tienes que agregar en el input el nombre del distrito(donde te ubicas) y enseguida tendras como resultado los nombres de los restaurantes y podras acceder a la informacion general de cada restaurante de ese distrito</p>    -->
+            <div class="col-xs-12 img">
+              <img class="img-responsive" src="assets/images/food-map.png" alt="foodmap">
             </div>
             <br>
-            <a href="https://github.com/aurorex/food-map" target="blank"> DEMO</a>
-            <a href="https://github.com/aurorex/food-map" target="blank"> REPOSITORIO</a>
+            <a class="demo" href="https://aurorex.github.io/food-map/public/" target="blank"> DEMO</a>
+            <a class="repositorio" href="https://github.com/aurorex/food-map" target="blank"> REPOSITORIO</a>
           </div>
-          <div class="col-md-3 product">
-            <h3 class="text-center">Red Social</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur ut architecto, eveniet fugit molestias similique at</p>
-            <div>
-              <img src="assets/images/img4.jpg" alt="red-social">
+          <div class="col-md-3 product text-center">
+            <h3 class="text-center">Api Weather</h3>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi consequuntur ut architecto, eveniet fugit molestias similique at</p> -->
+            <div class="col-xs-12 img">
+              <img class="img-responsive" src="assets/images/api-wather.png" alt="red-social">
             </div>
             <br>
-            <a href="https://github.com/aurorex/red-social" target="blank"> DEMO</a>
-            <a href="https://github.com/aurorex/red-social" target="blank"> REPOSITORIO</a>
+            <a class="demo" href="https://aurorex.github.io/api-weather/public/" target="blank"> DEMO</a>
+            <a class="repositorio" href="https://github.com/aurorex/api-weather" target="blank"> REPOSITORIO</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- estructura de la section 'contacts' -->
-    <section id="contacts">
+    <!-- estructura de la section 'contact' -->
+    <section id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>CONTACTOS</h1>
+        <div  class="row">
+          <div class="col-md-12 title-contact text-center">
+            <h1>CONTACTO</h1>
           </div>
-          <div class="col-md-12 contacts-list">
-            <div><a><i class="icon-phone-square"></i>Cel: 975383487</a></div>
-            <div><a><i class="icon-envelope-o"></i> auroraVasquezSanchez@hotmail.com</a></div>
-            <div><a href="https://www.linkedin.com/in/aurora-v%C3%A1squez-s%C3%A1nchez-506652159/" target="blank"><i class="icon-linkedin-square"></i>Linkedin</a></div>
-            <div><a href="https://github.com/aurorex?tab=repositories" target="blank"><i class="icon-github-square"></i>Github</a></div>
-          </div>
+          
         </div>
       </div>
     </section>
     <!-- estructura de la section 'footer' -->
-    <footer>
-      <div class="container">
+    <footer id="contact-list">
+      <div class="container ">
         <div class="row">
-          <div class="col">
-          </div>
+            <div class="col-md-12 ">
+                <div class="col-md-3 text-center"><a><i class="icon-phone-square"></i></a><br>Cel: 975383487</div>
+                <div class="col-md-3 text-center"><a href="mailto:auroraVasquezSanchez@hotmail.com?Subject=Hello%20again" target="_top"><i class="icon-envelope-o"></i></a><br>auroraVasquezSanchez<br>@hotmail.com</div>
+                <div class="col-md-3 text-center"><a href="https://www.linkedin.com/in/aurora-v%C3%A1squez-s%C3%A1nchez/" target="blank"><i class="icon-linkedin-square"></i></a><br>Linkedin</div>
+                <div class="col-md-3 text-center"><a href="https://github.com/aurorex?tab=repositories" target="blank"><i class="icon-github-square"></i></a><br>Github</div>
+              </div>
         </div>
+        <div class="row">
+          <h4>©auroraVásquezSánchez2018</h4>
+        </div>
+        <!-- <div class="row">
+          <a class="pull-right button-up">button-up</a>
+        </div> -->
       </div>
     </footer>
 
     <!-- enlaces para darle dinamismo a la página -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>

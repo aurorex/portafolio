@@ -11,159 +11,207 @@ section{
   overflow: hidden;
 }
 
-#aboutme, #skills, #portfolio, #contacts{
-  padding-top: 12vh;
-}
+/*estilos para el dispositivo mobil*/
 
-/* clases reutilizables */
-.subtitle{
-  font-size: 30px;
-  font-weight: bold;
-  padding-bottom: 40px;
-}
+  /*estilos del header*/
+  header{
+    width: 100vw;
+    margin-top: 0;
+    height:10vh;
+    z-index: 1000;
+    position: fixed;
+    /* padding:30px; */
+    background:rgb(31, 34, 54);
+  }
 
-/* estilos para el header */
-header{
-  width: 100vw;
-  margin-top: 0;
-  height:10vh;
-  z-index: 1000;
-  position: fixed;
-  /* padding:30px; */
-  background:rgb(31, 34, 54);
-}
+  header ul li{
+    list-style: none;
+    border-radius: 5px;
+  }
+  
+   header ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 10vh;
+  }
+   
+  header ul li a:hover{
+    text-decoration: none;
+    color: rgb(52, 153, 167);
+  }
+  
+  .list-inline .cv-download{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .list-inline .cv-download:hover{
+    border: 1px solid rgb(52, 153, 167);
+    border-radius: 3px;
+  }
+  
+  .list-inline .icon-cloud-download{
+    margin: 0  10px 0 0;
+  }
 
-header ul li{
-  list-style: none;
-  border-radius: 5px;
-}
+  .nav{
+    border-radius: 5px;
+    border:1px solid rgb(52, 153, 167);
+    padding: 5px 7px 5px 5px;
+    margin: 10px;
+  }
 
-header ul li a{
-  text-decoration: none;
-  margin-right: 10px;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  line-height: 10vh;
-  /* font-weight: 10px; */
-}
+  .nav>a{
+    text-decoration: none;
+    color: rgb(52, 153, 167);
+  }
 
-header ul li a:hover{
-  text-decoration: none;
-  color: rgb(52, 153, 167);
-}
+  .nav>a:hover{
+    text-decoration: none;
+    color:#fff;
+  }
 
-.cv-download{
-  border: 1px solid white;
-  border-radius: 3px;
-  padding: 10px 10px 5px 10px;
-}
+  .nav:hover{
+    text-decoration: none;
+    background-color: rgb(52, 153, 167);
+    color:#fff;
+  }
 
-.cv-download:hover{
-  border: 1px solid rgb(52, 153, 167);
-  border-radius: 3px;
-}
+  .dropdown-menu{
+    background-color: rgb(52, 153, 167);
 
-.icon-cloud-download{
-  margin: 0  10px 0 0;
-}
+  }
+  header .dropdown-menu li{
+    list-style: none;
+    border-radius: 5px;
+  }
 
-/* estilos para la sección homepage */
-.homepage{
-  background-image: url(../assets/images/img4.jpg);
-  background-size: cover;
+  header .dropdown-menu li a{
+    text-decoration: none;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 10vh;
+  }
+  
+  header .dropdown-menu li a:hover{
+    text-decoration: none;
+    background-color: rgb(31, 34, 54);
+  }
+
+  /*estilos del homepage*/
+  .homepage{
+    background-image: url(../assets/images/compu6.jpg);
+    background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
-  background-attachment: fixed;
-}
-
-.homepage-opacity{
-  background-color: rgba(31, 49, 63, 0.4);
-  width:100vw;
+  background-attachment: fixed;   
+  }
+    
+  .homepage-opacity{
+    width:100vw;
   height:100vh ;
-}
+    background-color: rgba(23, 23, 54, 0.5);  
+  }
 
-.slogan{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 200px;
-  color:rgb(255, 255, 255);
-  text-shadow: 2px 2px 2px rgb(51, 45, 45);
-}
+  .slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+    margin-top: 180px;
+    color:rgb(233, 228, 250);
+    text-shadow: 2px 2px 2px rgb(51, 45, 45);
+  }
 
-.slogan h1{
-  font-size: 80px;
-}
+  .slogan h1, .slogan h2{
+    margin: 5px;
+  }
 
-.slogan h1, .slogan h2{
-  margin: 5px;
-}
+  .slogan h1{
+    font-size: 50px;
+  }
 
-.slogan h2{
-  font-size: 60px;
-}
+  .slogan h2{
+    font-size: 40px;
+  }
+  
+  .slogan ul li{
+    padding-top: 50px;
+    list-style: none;
+    border-radius: 5px;
+  }
+  
+  .slogan ul li a{
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    padding:10px 30px 5px 30px;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #ffffff;
+    line-height: 10vh;
+    /* font-weight: 10px; */
+  }
 
-/* estilos para la sección de about-me */
-#aboutme{
-  background-color: rgb(231, 231, 231);
-  height:100vh;
-}
+  .slogan ul li a:hover{
+    border: 1px solid rgb(52, 153, 167);
+    text-decoration: none;
+    background-color: rgb(52, 153, 167);
+  }
 
-.title-aboutme{
-  padding-top: 5vh;
-  font-size: 60px;
+  .slogan .cv-download{
+    font-size: 30px;
+    color:white;
+  }
+  
+  .slogan .icon-cloud-download{
+    padding: 10px 10px 5px 10px;
+    color:white;
+  }
+
+  /*estilos del section 'aboutme'*/
+  .line-decoration1{
+    height: 0;
+    border-right: none;
+  }
+
+  #aboutme{
+    padding-top:7vh;
+    height: 100%;
+  }
+
+  .aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+  }
+
+  .title-aboutme{
+    padding-top:0px ;
+    font-size: 50px;
   color: rgb(4, 92, 107);
   font-weight: bold;
-}
+  }
 
-.photo img{
-  width: 300px;
-  height: 200px;
-  border-radius:10px;
-}
+  .photo img{
+    width: 250px;
+    height: 170px;
+    border-radius:10px;
+  }
 
-.line-decoration1{
-  height: 200px;
-  border-right: 2px solid rgb(4, 92, 107);
-}
+  .description{
+    padding: 18vh 30px 5vh 30px;
+    font-size: 15px;
+  }
 
-.description{
-  padding: 30px;
-}
-
-.title-hobbies{
-  padding-top: 4vh;
-  padding-bottom: 40px ;
-  font-size: 30px;
-  color: rgb(4, 92, 107);
-  font-weight: bold;
-}
-
-.icon-hobbies span{
-  border-radius: 50%;
-  font-size: 55px;
-  color: white;
-  padding: 30px;
-  background-color:rgb(4, 92, 107);
-  /* margin:0 55px 0 0; */
-}
-
-.icon-hobbies span:hover{
-  background-color: rgb(52, 153, 167);
-}
-
-.icon-margin-hobbies{
-  margin:0 120px 0 0;
-}
-
-.icon-margin-hobbies-2{
-  margin-top: 20px;
-  margin-left: 150px;
-}
-
-/* estilos para la sección de extra-page */
+  /* estilos para la sección de extra-page */
  .extra-page{
   background-image: url(../assets/images/robot.jpg);
   background-size: cover;
@@ -172,65 +220,114 @@ header ul li a:hover{
   height: 100vh;
   background-attachment: fixed;
 }
-
-.extra-page h1{
-  /* line-height: 100vh; */
-}
-
-/* estilos para la secciòn de skills */
-#skills{
+  
+  /*estilos para la seccion 'skills'*/
+  #skills{
+  padding-top: 7vh;
   font-weight: bold;
-  height: 100vh;
-  color: rgb(51, 51, 51);
+  height: 100%;
+  padding-bottom: 5vh;
+  color: rgb(4, 92, 107);
 }
 
 .title-skills{
-  padding-top: 20vh;
-  font-size: 60px;
-  color: rgb(51, 51, 51);
+  padding-top: 18vh;
+  font-size: 43px;
+  padding-right: 10px;
+  color: rgb(4, 92, 107);
+  font-weight: bold;
+}
+
+.subtitle-tech{
+  font-size: 30px;
+  padding-top: 15vh;
+  padding-bottom: 20px;
   font-weight: bold;
 }
 
 .line-decoration2{
-  border-right: 2px solid rgb(51, 51, 51);
-  height:70vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  border-right: none;
+  height:0px;
 }
 
-.img-tech{
-  /* background-color: rgb(32, 27, 49); */
-  font-size: 70px;
+.col-xs-6{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .img-tech img{
-  width: 60px ;
-  height:60px ;
+  width: 80px ;
+  height:80px ;
+  border-radius:10px;
+}
+
+.img-tech1 img{
+  width: 70px ;
+  height: 80px ;
+  border-radius:10px;
+}
+
+.babel img{
+  width:110px ;
+  height: 80px ;
+  border-radius:10px;
+}
+
+.bootstrap img{
+  width: 70px ;
+  height:70px ;
+  border-radius:10px;
+}
+
+.materialize img{
+  width: 90px ;
+  height:70px ;
+  border-radius:10px;
 }
 
 figcaption{
-  font-size: 10px;
+  margin: 7px 0;
+  font-size: 16px;
 }
 
 .list{
   list-style: none;
-  font-size: 25px;
+  font-size: 20px;
 }
 
-/* estilos para la sección portfolio */
+.list img{
+  width: 110px;
+  height:110px;
+  background-color: rgb(235, 239, 240);
+  border-radius:50%;
+  margin: 4px 0;
+}
+
+/*estilos para la seccion 'portfolio'*/
 #portfolio{
-  height:100vh;
+  padding-top: 9vh;
+  height: 100%;
+  padding-bottom:50px;
   background-color: rgb(49, 113, 133);
 }
 
 .portfolio-title{
+  padding-bottom: 20px;
   color: rgb(209, 208, 208);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .product{
   background-color: rgb(231, 231, 231);
-  margin: 15px;
-  padding: 10px;
+  margin: 10px;
+  padding: 10px 0 30px 0;
   border-radius:5px;
   border-bottom: 3px solid rgb(181, 211, 255);
   border-left: 3px solid rgb(181, 211, 255);
@@ -238,61 +335,398 @@ figcaption{
   font-weight: bold;
 }
 
-.product img{
-  width: 220px;
-  height:250px;
+.product a{
+  font-size: 15px;
 }
 
-.product a{
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.product img{
+  margin:20px 0;
+  width: 600px;
+  height:200px;
+}
+
+.product .repositorio, .demo{
   text-decoration: none;
   border: 2px solid rgb(49, 113, 133);
   padding: 5px 7px;
   color:rgb(49, 113, 133);
   font-weight: bold;
+  margin: 0 0 10px 0;
   margin-right: 10px;
   border-radius:5px;
 }
 
-.product a:hover{
+.product .repositorio:hover, .product .demo{
   background-color:rgb(49, 113, 133);
   color:rgb(231, 231, 231);  
 }
 
-/* estilos para la sección de contacts */
-#contacts{
-  height:100vh;
+.demo:hover{
+  text-decoration: none;
+  background-color:rgb(31, 34, 54);
+}
+
+/* estilos para la seccion de 'contacto' */
+  #contact{
+    padding-top: 12vh;
+    height: 30vh;
+    align-items: center;
+  color: rgb(51, 51, 51);
+  background-color:rgb(209, 208, 208);
+  }
+
+  .title-contact h1{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #contact-list{
+    padding-top: 10vh;
+    padding-bottom: 1vh;
+    height: 100%;
+    background-color: rgb(51, 51, 51);
+  color:rgb(209, 208, 208);
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: rgb(51, 51, 51);
-  color:rgb(209, 208, 208);
+  }
+
+  #contact-list div{
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  #contact-list div a {
+    font-size: 20px;
+    color:rgb(209, 208, 208);
+  
+  }
+  
+  #contact-list div a i{
+    font-size: 70px;
+    color:rgb(209, 208, 208);
+    margin: 0 10px;
+  }
+  
+  #contact-list div a{
+    text-decoration: none;
+  }
+  
+  #contact-list div a:hover{
+    text-decoration: none;
+  
+  }
+  
+  #contact-list div a i:hover{
+    text-decoration: none;
+    color: rgb(111, 111, 129);
+  }
+  
+  
+  #contact-list h4{
+    padding-top: 13vh;
+  }
+
+
+/* .button-up{
+  display: absolute;
+  position: fixed;
+  z-index: 100000;
+  background-color: red;
+}
+ */
+
+ @media (min-width: 768px) { 
+/* estilos para la sección homepage */
+.homepage{
+  background-image: url(../assets/images/computadora1.jpg);
 }
 
-.contacts-list{
-  margin-top: 30px;
+.homepage-opacity{
+  background-color: rgba(58, 57, 56, 0.6);
 }
 
-.contacts-list div{
-  margin-top:5px;
+.slogan{
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.contacts-list div a {
-  font-size: 18px;
-  color:rgb(209, 208, 208);
+.slogan h1{
+  font-size: 80px;
 }
 
-.contacts-list div a i{
+.slogan h2{
+  font-size: 60px;
+}
+
+/* estilos para la sección de about-me */
+#aboutme{
+  padding-top: 12vh;
+  height:70vh;
+  padding-bottom: 10vh;
+}
+
+.aboutme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:row;
+}
+
+.title-aboutme{
+  padding-top: 7vh;
+  font-size: 40px;
+}
+
+.interestings{
+  text-align: center;
+}
+
+.line-decoration1{
+  height: 210px;
+  border-right: 2px solid rgb(4, 92, 107);
+}
+
+.description{
+  padding: 0 30px;
+  font-size: 15px;
+}
+
+.photo img{
+  width: 180px;
+  height: 140px;
+  border-radius:10px;
+}
+
+/* estilos para la secciòn de skills */
+#skills{
+  padding-top: 9vh;
+  height: 100%;
+}
+
+.title-skills{
+  padding-top: 22vh;
+  padding-bottom: 60px;
+  
+}
+.subtitle-tech{
+  padding-top: 11vh;
+  padding-bottom: 10px;
+}
+
+.line-decoration2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  border-right: none;
+  height:none;
+}
+
+
+/* estilos para la sección portfolio */
+#portfolio{ 
+  height:100%; 
+}
+
+.product{
+  margin: 15px;
+  padding: 10px 0 20px 0;
+}
+
+.product img{
+  width: 600px;
+  height:300px;
+}
+
+
+/* estilos para la sección de contacts */
+#contact{
+  padding-top: 18vh;
+  height:40vh;
+}
+
+.line-decoration4{
+  width: 50px;
+  border-bottom:2px solid rgb(51, 51, 51);
+  margin-bottom:300px;
+
+}
+
+#contact-list{
+  height:100%;
+  
+}
+
+#contact-list div{
+  margin-bottom: 10px;
   font-size: 20px;
-  color:rgb(209, 208, 208);
-}
-.contacts-list div a{
-  text-decoration: none;
 }
 
-.contacts-list div a:hover{
-  text-decoration: none
 }
 
+/*estilos para la vista en desktop*/
+@media (min-width: 992px) { 
+  /* estilos para la sección homepage */
+  .homepage{
+    background-image: url(../assets/images/computadora1.jpg);
+  }
+  
+  .homepage-opacity{
+    background-color: rgba(58, 57, 56, 0.6);
+  }
+  
+  .slogan{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .slogan h1{
+    font-size: 80px;
+  }
+  
+  .slogan h2{
+    font-size: 60px;
+  }
+  
+  /* estilos para la sección de about-me */
+  #aboutme{
+    padding-top: 12vh;
+    height:100vh;
+    padding-bottom: 10vh;
+  }
+  
+  .aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+  }
+  
+  .title-aboutme{
+    padding-top: 7vh;
+  }
+  
+  .interestings{
+    text-align: center;
+  }
+  
+  .line-decoration1{
+    height: 210px;
+    border-right: 2px solid rgb(4, 92, 107);
+  }
+  
+  .description{
+    padding: 0 30px;
+    font-size: 18px;
+  }
+  
+  .title-hobbies{
+    padding-top: 10vh;
+    padding-bottom: 30px ;
+    font-size: 30px;
+    color: rgb(4, 92, 107);
+    font-weight: bold;
+  }
+  
+  .icon-hobbies span{
+    border-radius: 50%;
+    font-size: 55px;
+    color: #fff;
+    padding: 30px 30px 10px 30px;
+    background-color:rgb(4, 92, 107);
+    /* margin:0 55px 0 0; */
+  }
+  
+  .icon-margin-hobbies{
+    margin-top: 70px;
+  }
+  
+  .icon-hobbies p{
+    margin-top: 5px;
+    font-size: 18px;
+    color:rgb(4, 92, 107);
+    font-weight: bold;
+  }
+  
+  /* estilos para la secciòn de skills */
+  #skills{
+    padding-top: 9vh;
+    height: 100vh;
+  }
+  
+  .title-skills{
+    padding-top: 0;
+    padding-bottom: 90px;
+    
+  }
+  .subtitle-tech{
+    padding-top: 5px;
+    padding-bottom: 10px;
+  }
+  
+  .line-decoration2{
+    margin-top: 4vh;
+    border-right: 2px solid rgb(4, 92, 107);
+    height:80vh;
+  }
+  
+  
+  /* estilos para la sección portfolio */
+  #portfolio{ 
+    height:100vh; 
+  }
+  
+  .product{
+    margin: 15px;
+    padding: 10px 0 20px 0;
+  }
+  
+  .product img{
+    width: 1000px;
+    height:250px;
+  }
+  
+  
+  /* estilos para la sección de contacts */
+  #contact{
+    padding-top: 18vh;
+    height:40vh;
+  }
+  
+  .line-decoration4{
+    width: 50px;
+    border-bottom:2px solid rgb(51, 51, 51);
+    margin-bottom:300px;
+  
+  }
+  
+  #contact-list{
+    height:60vh;
+    
+  }
+  
+  #contact-list div{
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  }
+  
 
+ 
 
 
