@@ -124,8 +124,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    float: right;
-    margin-top: 180px;
+    margin-top: 150px;
     color:rgb(233, 228, 250);
     text-shadow: 2px 2px 2px rgb(51, 45, 45);
   }
@@ -136,10 +135,11 @@ section{
 
   .slogan h1{
     font-size: 50px;
+    font-family: 'Bitter', serif;
   }
 
   .slogan h2{
-    font-size: 40px;
+    font-size: 30px;
   }
   
   .slogan ul li{
@@ -151,7 +151,7 @@ section{
   .slogan ul li a{
     border: 1px solid #ffffff;
     border-radius: 3px;
-    padding:10px 30px 5px 30px;
+    padding:10px 20px 5px 20px;
     text-decoration: none;
     margin-right: 10px;
     color: #ffffff;
@@ -166,7 +166,7 @@ section{
   }
 
   .slogan .cv-download{
-    font-size: 30px;
+    font-size: 23px;
     color:white;
   }
   
@@ -209,6 +209,7 @@ section{
   .description{
     padding: 18vh 30px 5vh 30px;
     font-size: 15px;
+    text-align: justify;
   }
 
   /* estilos para la sección de extra-page */
@@ -243,6 +244,11 @@ section{
   padding-top: 15vh;
   padding-bottom: 20px;
   font-weight: bold;
+}
+
+.blandas ul li{
+  margin: 0 10px;
+  font-size: 17px;
 }
 
 .line-decoration2{
@@ -375,8 +381,9 @@ figcaption{
 
 /* estilos para la seccion de 'contacto' */
   #contact{
-    padding-top: 12vh;
-    height: 30vh;
+    padding-top: 11vh;
+    padding-bottom:30px;
+    height:100%;
     align-items: center;
   color: rgb(51, 51, 51);
   background-color:rgb(209, 208, 208);
@@ -389,8 +396,8 @@ figcaption{
 
   #contact-list{
     padding-top: 10vh;
-    padding-bottom: 1vh;
-    height: 100%;
+    /* padding-bottom: 50vh; */
+    height:100%;
     background-color: rgb(51, 51, 51);
   color:rgb(209, 208, 208);
   display: flex;
@@ -398,19 +405,19 @@ figcaption{
   justify-content: center;
   }
 
-  #contact-list div{
-    margin-bottom: 50px;
+  #contact-list div a{
+    padding-bottom: 50px;
     font-size: 20px;
   }
 
   #contact-list div a {
     font-size: 20px;
-    color:rgb(209, 208, 208);
+    color: rgb(209, 208, 208);
   
   }
   
   #contact-list div a i{
-    font-size: 70px;
+    font-size: 60px;
     color:rgb(209, 208, 208);
     margin: 0 10px;
   }
@@ -426,14 +433,15 @@ figcaption{
   
   #contact-list div a i:hover{
     text-decoration: none;
-    color: rgb(111, 111, 129);
+    color: rgb(209, 208, 208);
   }
   
   
   #contact-list h4{
     padding-top: 13vh;
+    font-size: 15px;
+    padding-bottom: 10px;
   }
-
 
 /* .button-up{
   display: absolute;
@@ -553,7 +561,7 @@ figcaption{
 /* estilos para la sección de contacts */
 #contact{
   padding-top: 18vh;
-  height:40vh;
+  height:100%;
 }
 
 .line-decoration4{
@@ -578,6 +586,10 @@ figcaption{
 /*estilos para la vista en desktop*/
 @media (min-width: 992px) { 
   /* estilos para la sección homepage */
+  #homepage{
+    height: 100vh;
+  }
+
   .homepage{
     background-image: url(../assets/images/computadora1.jpg);
   }
