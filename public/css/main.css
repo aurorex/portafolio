@@ -196,20 +196,21 @@ section{
 
   .title-aboutme{
     padding-top:0px ;
-    font-size: 50px;
+    font-size: 30px;
     color: rgb(4, 92, 107);
     font-weight: bold;
   }
 
   .photo img{
-    width: 250px;
-    height: 170px;
+    width: 240px;
+    height: 160px;
     border-radius:10px;
   }
 
   .description{
-    padding: 18vh 30px 5vh 30px;
-    font-size: 15px;
+    padding: 14vh 30px 5vh 30px;
+    font-size: 16px;
+    line-height: 18px;
     text-align: justify;
   }
 
@@ -233,25 +234,25 @@ section{
 }
 
 .title-skills{
-  font-size: 43px;
+  font-size: 30px;
   padding-right: 10px;
   color: rgb(4, 92, 107);
   font-weight: bold;
 }
 
 .subtitle-tech{
-  font-size: 30px;
+  font-size: 25px;
   padding-bottom: 20px;
   font-weight: bold;
 }
 
 .top1{
-  padding-top: 11vh;
+  padding-top: 7vh;
 
 }
 
 .top2{
-  padding-top: 8vh;
+  padding-top: 5vh;
 
 }
 
@@ -326,17 +327,17 @@ figcaption{
 
 /*estilos para la seccion 'portfolio'*/
 #portfolio{
-  padding-top: 10vh;
+  padding-top: 8vh;
   height: 100%;
   padding-bottom:15vh;
   background-color: rgb(49, 113, 133);
 }
 
 .portfolio-title{
-  padding-bottom: 20px;
+  /* padding-bottom: 0; */
   color: rgb(209, 208, 208);
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
 }
 .product{
   color: rgb(31, 34, 54);
@@ -344,18 +345,20 @@ figcaption{
 }
 
 .product h3{
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(209, 208, 208);
-  border-bottom: 2px solid rgb(209, 208, 208);
-  padding-bottom: 10px;
+  /* border-bottom: 2px solid rgb(209, 208, 208); */
+  padding-bottom: 3px;
 }
 
 .product p{
   text-align: justify;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .product a{
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .img{ 
@@ -444,7 +447,7 @@ figcaption{
 
   
 #contact-list  a i{
-  font-size: 50px;
+  font-size: 37px;
   color:rgb(209, 208, 208);
   margin: 0 10px;
 }
