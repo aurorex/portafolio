@@ -327,7 +327,7 @@ figcaption{
 
 /*estilos para la seccion 'portfolio'*/
 #portfolio{
-  padding-top: 8vh;
+  padding-top: 10vh;
   height: 100%;
   padding-bottom:15vh;
   background-color: rgb(49, 113, 133);
@@ -379,7 +379,7 @@ figcaption{
 }
 
 .product img{
-  margin:20px 0;
+  margin:20px 0 5px 0;
   width: 1000px;
   height:200px;
 }
@@ -397,6 +397,10 @@ figcaption{
   background-color: rgb(49, 113, 133);
   color:rgb(231, 231, 231);
 
+}
+
+.img .description{
+  margin:0;
 }
 
 .product .repositorio{
