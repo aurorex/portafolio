@@ -197,8 +197,8 @@ section{
   .title-aboutme{
     padding-top:0px ;
     font-size: 50px;
-  color: rgb(4, 92, 107);
-  font-weight: bold;
+    color: rgb(4, 92, 107);
+    font-weight: bold;
   }
 
   .photo img{
@@ -214,7 +214,7 @@ section{
   }
 
   /* estilos para la sección de extra-page */
- .extra-page{
+.extra-page{
   background-image: url(../assets/images/robot.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -223,8 +223,8 @@ section{
   background-attachment: fixed;
 }
   
-  /*estilos para la seccion 'skills'*/
-  #skills{
+/*estilos para la seccion 'skills'*/
+#skills{
   padding-top: 18vh;
   font-weight: bold;
   height: 100%;
@@ -338,17 +338,16 @@ figcaption{
   font-weight: bold;
   font-size: 40px;
 }
-
 .product{
- /* background-color: rgb(231, 231, 231);*/
-  margin-top: 10px;
-  /*padding: 10px 0 30px 0;*/
-  color: rgb(51, 51, 51);
+  color: rgb(31, 34, 54);
   font-weight: bold;
 }
 
 .product h3{
-
+  font-size: 30px;
+  color: rgb(209, 208, 208);
+  border-bottom: 2px solid rgb(209, 208, 208);
+  padding-bottom: 10px;
 }
 
 .product p{
@@ -359,42 +358,58 @@ figcaption{
   font-size: 15px;
 }
 
-/*.img{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}*/
+.img{ 
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 20px;
+  padding-top: 1px;
+}
+
+.btn-product{
+  /* position: absolute;
+  margin-top:100px;
+  margin-left:30px; */
+}
+
+.margin{
+  color: rgb(49, 113, 133);
+}
 
 .product img{
- /* border-bottom: 3px solid rgb(231, 231, 231);
-  border-left: 3px solid rgb(231, 231, 231);*/
-/*  border-radius:5px;*/
   margin:20px 0;
-  width: 800px;
+  width: 1000px;
   height:200px;
 }
 
 .product .repositorio, .product .demo{
   text-decoration: none;
-  border: 2px solid red
   padding: 5px 7px;
-  background-color: red;
-  color:black;
   font-weight: bold;
   margin: 0 0 10px 0;
   margin-right: 10px;
   border-radius:5px;
 }
 
-.product .repositorio:hover{
-  /*background-color: rgb(231, 231, 231);*/
-  color:rgb(49, 113, 133);
+.product .demo{
+  background-color: rgb(49, 113, 133);
+  color:rgb(231, 231, 231);
+
+}
+
+.product .repositorio{
+  background-color:transparent;
+  border: 2px solid rgb(49, 113, 133);
+  color: rgb(49, 113, 133);
+
+}
+
+.repositorio:hover{
+  background-color: rgb(49, 113, 133);
+  color:rgb(231, 231, 231);
 }
 
 .demo:hover{
   text-decoration: none;
-/*  background-color:rgb(31, 34, 54);*/
+  background-color:rgb(31, 34, 54);
 }
 
 /* estilos para la seccion de 'contacto' */
@@ -471,7 +486,7 @@ figcaption{
 @media (min-width: 768px) { 
 /* estilos para la sección homepage */
   .homepage{
-    background-image: url(../assets/images/computadora1.jpg);
+    background-image: url(../assets/images/compu4.jpg);
   }
 
   .homepage-opacity{
@@ -480,14 +495,16 @@ figcaption{
  
   .slogan{
     margin-top: 250px;
-    display: flex;
+    margin-left:2px;
+    float: left;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
   }
 
   .slogan h1{
-    font-size: 80px;
+    font-size: 77px;
   }
 
   .slogan h2{
@@ -496,16 +513,16 @@ figcaption{
 
 /* estilos para la sección de about-me */
   #aboutme{
-    padding-top: 12vh;
-    height:70vh;
-    padding-bottom: 10vh;
+    padding-top: 17vh;
+    height:100%;
+    padding-bottom:100px ;
   }
-
   .aboutme{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction:row;
+    padding-right: 20px;
   }
 
   .title-aboutme{
@@ -523,19 +540,20 @@ figcaption{
   }
 
   .description{
-    padding: 0 30px;
-    font-size: 15px;
+    padding: 0 15px;
+    font-size: 14px;
   }
 
   .photo img{
-    width: 180px;
-    height: 140px;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 35px; 
     border-radius:10px;
   }
 
 /* estilos para la secciòn de skills */
   #skills{
-    padding-top: 9vh;
+    padding-top: 14vh;
     height: 100%;
   }
 
@@ -558,46 +576,77 @@ figcaption{
     height:none;
   }
 
+  .blandas ul{
+    margin-left:8px;
+  }
+
 
 /* estilos para la sección portfolio */
   #portfolio{ 
+    padding-top: 13vh;
     height:100%; 
   }
 
   .product{
-    margin: 15px;
-    padding: 10px 0 20px 0;
+    margin: 15px 0;
+    /* padding: 10px 0 20px 0; */
   }
 
   .product img{
-    width: 600px;
-    height:300px;
+    width: 800px;
+    height:400px;
+  }
+
+  .product h3{
+    font-size: 40px;
+  }
+
+  .img p{
+    font-size:18px;
+  }
+
+  .btn-product a{
+    font-size:18px;
   }
 
 
 /* estilos para la sección de contacts */
   #contact{
-    padding-top: 18vh;
+    padding-top: 11vh;
     height:100%;
+  }
+
+  .title-contact{
+    padding-top: 1vh;
+
   }
 
   .line-decoration4{
     width: 50px;
     border-bottom:2px solid rgb(51, 51, 51);
     margin-bottom:300px;
-
   }
 
   #contact-list{
     height:100%;
-  
   }
 
   #contact-list div{
     margin-bottom: 10px;
     font-size: 20px;
   }
+  
+  #contact-list p{
+    font-size:17px;
+  }
 
+  #contact-list a{
+    font-size: 80px;
+  }
+
+  #contact-list h4{
+    font-size: 17px;
+  }
 }
 
 /*estilos para la vista en desktop*/
@@ -616,11 +665,13 @@ figcaption{
   }
   
   .slogan{
-    margin-top: 250px;
-    display: flex;
+    margin-top: 300px;
+    float:right;
+    padding-right: 20px;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
   }
   
   .slogan h1{
@@ -633,9 +684,9 @@ figcaption{
   
   /* estilos para la sección de about-me */
   #aboutme{
-    padding-top: 12vh;
-    height:100vh;
-    padding-bottom: 10vh;
+    padding-top: 14vh;
+    height:100%;
+    padding-bottom: 100px;
   }
   
   .aboutme{
