@@ -124,22 +124,22 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 150px;
+    margin-top: 230px;
     color:rgb(233, 228, 250);
     text-shadow: 2px 2px 2px rgb(51, 45, 45);
   }
 
   .slogan h1, .slogan h2{
-    margin: 5px;
+    margin: 5px 0;
   }
 
   .slogan h1{
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Bitter', serif;
   }
 
   .slogan h2{
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .slogan ul li{
@@ -423,7 +423,7 @@ figcaption{
 }
 
 .title-contact h1{
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -442,14 +442,9 @@ figcaption{
   padding-bottom: 40px;
 }
 
-#contact-list div a {
-  font-size: 20px;
-  color: rgb(209, 208, 208);
   
-}
-  
-#contact-list div a i{
-  font-size: 60px;
+#contact-list  a i{
+  font-size: 50px;
   color:rgb(209, 208, 208);
   margin: 0 10px;
 }
