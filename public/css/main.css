@@ -447,7 +447,7 @@ figcaption{
 /* estilos para la seccion de 'contacto' */
 
 #container-contact-list{
-  padding: 5px 0 10px 0;
+  padding: 5px 0 0 0;
   background-color:rgb(209, 208, 208);
   transition: 2s;
 }
