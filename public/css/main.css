@@ -141,7 +141,7 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 200px;
     color:rgb(233, 228, 250);
     text-shadow: 2px 2px 2px rgb(51, 45, 45);
   }
@@ -378,7 +378,7 @@ figcaption{
 
 .product p{
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
 }
 
@@ -406,7 +406,7 @@ figcaption{
 .product img{
   margin:20px 0 10px 0;
   width: 1000px;
-  height:200px;
+  height:150px;
 }
 
 .product .repositorio, .product .demo{
@@ -1135,6 +1135,11 @@ figcaption{
 
   .description h3{
     font-size: 30px;
+  }
+
+  .product img{
+    width: 600px;
+    height:300px;
   }
   
   .product img{
