@@ -1,24 +1,4 @@
 (function($) {
- 
- // let listContact = $('div.contact-list>div>a>i');
-
- // listContact.on('mouseover', function() {
- //   $(this).css({'font-size': '78px', '-webkit-transition': '0.2s', 'color':'rgb(38, 30, 65)', 'cursor':'pointer'});
- //   // $('div.contacts-list>div>a>i').css({'color':'rgb(38, 30, 65)'});
- // });
-
- // listContact.on('mouseout', function() {
- //   $(this).css({'font-size': '70px',  '-webkit-transition': '0.2s', 'color':'rgb(209, 208, 208); '});
- //   // $('div.contacts-list>div>a>i').css({'color':'rgb(38, 30, 65)'});
- // });
-
- // $(window).scroll(function() {
- //   if ($(window).scrollTop() > 100) {
- //     title.fadeOut();
- //   } else {
- //     title.fadeIn();
- //   }
- // });
 
  let functionScroll = (start, end) => {
    $(start).on('click', function() {
@@ -68,4 +48,38 @@
  functionScroll('#icon1-contacts','#contacts');
  functionScroll('#icon2-contacts','#contacts');
 
+ // evento para la sección de portafolio
+ const enlaceRepo1 = $('.enlace');
+ const imageRepo1 = $('#img1');
+
+ const enlaceRepo2 = $('.enlace2');
+ const imageRepo2 = $('#img2');
+
+ const enlaceRepo3 = $('.enlace3');
+ const imageRepo3 = $('#img3');
+
+  enlaceRepo1.on('mouseover', function() {
+    imageRepo1.addClass('transparent');
+  }) 
+
+  enlaceRepo1.on('mouseout', function() {
+    imageRepo1.removeClass('transparent');
+  })
+
+  enlaceRepo2.on('mouseover', function() {
+    imageRepo2.addClass('transparent');
+  }) 
+
+  enlaceRepo2.on('mouseout', function() {
+    imageRepo2.removeClass('transparent');
+  })
+  
+  enlaceRepo3.on('mouseover', function() {
+    imageRepo3.addClass('transparent');
+  }) 
+
+  enlaceRepo3.on('mouseout', function() {
+    imageRepo3.removeClass('transparent');
+  })
+  
 })(jQuery);
