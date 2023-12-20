@@ -57,7 +57,7 @@ section{
     text-decoration: none;
     margin-right: 10px;
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 10px;
     line-height: 10vh;
   }
    
@@ -254,19 +254,19 @@ section{
   
 /*estilos para la seccion 'skills'*/
 #skills{
-  padding-top: 18vh;
+  padding-top: 8vh;
   font-weight: bold;
   height: 100%;
   opacity: 0.2;
   transition: 2s;
   padding-bottom: 15vh;
-  color: rgb(4, 92, 107);
+  /* color: rgb(4, 92, 107); */
 }
 
 .title-skills{
   font-size: 30px;
   padding-right: 10px;
-  color: rgb(4, 92, 107);
+  /* color: rgb(4, 92, 107); */
   font-weight: bold;
 }
 
@@ -606,12 +606,12 @@ figcaption{
 
 /* estilos para la secciòn de skills */
   #skills{
-    padding-top: 14vh;
+    /* padding-top: 14vh; */
     height: 100%;
   }
 
   .title-skills{
-    padding-top: 22vh;
+    /* padding-top: 22vh; */
     padding-bottom: 60px; 
   }
 
@@ -799,7 +799,7 @@ figcaption{
     padding-top: 10vh;
     padding-bottom: 30px ;
     font-size: 30px;
-    color: rgb(4, 92, 107);
+    /* color: rgb(4, 92, 107); */
     font-weight: bold;
   }
   
@@ -808,7 +808,7 @@ figcaption{
     font-size: 55px;
     color: #fff;
     padding: 30px 25px 15px 26px;
-    background-color:rgb(4, 92, 107);
+    /* background-color:rgb(4, 92, 107); */
     /* margin:0 55px 0 0; */
   }
   
@@ -819,13 +819,13 @@ figcaption{
   .icon-hobbies p{
     margin-top: 11px;
     font-size: 18px;
-    color:rgb(4, 92, 107);
+    /* color:rgb(4, 92, 107); */
     font-weight: bold;
   }
   
   /* estilos para la secciòn de skills */
   #skills{
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
     height: 100%;
     padding-bottom:100px; 
   }
@@ -1038,10 +1038,10 @@ figcaption{
   }
   
   .title-hobbies{
-    padding-top: 10vh;
-    padding-bottom: 30px ;
+    /* padding-top: 10vh; */
+    /* padding-bottom: 30px ; */
     font-size: 30px;
-    color: rgb(4, 92, 107);
+    /* color: rgb(4, 92, 107); */
     font-weight: bold;
   }
   
@@ -1050,7 +1050,7 @@ figcaption{
     font-size: 55px;
     color: #fff;
     padding: 30px 25px 15px 26px;
-    background-color:rgb(4, 92, 107);
+    /* background-color:rgb(4, 92, 107); */
     /* margin:0 55px 0 0; */
   }
   
@@ -1061,13 +1061,13 @@ figcaption{
   .icon-hobbies p{
     margin-top: 11px;
     font-size: 18px;
-    color:rgb(4, 92, 107);
+    /* color:rgb(4, 92, 107); */
     font-weight: bold;
   }
   
   /* estilos para la secciòn de skills */
   #skills{
-    padding-top: 13vh;
+    /* padding-top: 13vh; */
     height: 100%;
     padding-bottom:100px; 
   }
@@ -1200,3 +1200,5 @@ figcaption{
 .visible-xs{
   margin-right: 20px;
 }
+
+
